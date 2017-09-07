@@ -15,7 +15,7 @@ gulp.task('styles', () => {
     return gulp.src('./dev/styles/**/*.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(concat('style.css'))
-        .pipe(gulp.dest('./public/styles'))
+        .pipe(gulp.dest('./dist/styles'))
 });
 
 gulp.task('js', () => {
@@ -31,7 +31,7 @@ gulp.task('js', () => {
         }))
         .pipe(source('app.js'))
         .pipe(buffer())
-        .pipe(gulp.dest('public/scripts'))
+        .pipe(gulp.dest('dist/scripts'))
         .pipe(reload({stream:true}));
 });
 
@@ -46,5 +46,5 @@ gulp.task('bs', () => {
 gulp.task('default', ['js','bs', 'styles'], () => {
     gulp.watch('dev/**/*.js',['js']);
     gulp.watch('dev/**/*.scss',['styles']);
-    gulp.watch('./public/styles/style.css',reload);
+    gulp.watch('./dist/styles/style.css',reload);
 });
