@@ -114,18 +114,8 @@ const ParticlesJS = (props) => {
                 }
               }
             },
-
-
         }}
-        style={{
-            position: "absolute",
-            top: "60px",
-            left: 0,
-            width: "100%",
-            height: "calc(100vh - 60px)",
-            backgroundColor: "#f1f1f1",
-            zIndex: "1"
-        }} />
+      />
 
 	)
 }

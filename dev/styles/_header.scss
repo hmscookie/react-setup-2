@@ -25,11 +25,24 @@ nav {
   }
 }
 
+canvas {
+  height: calc(100vh - 60px) !important;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background-color: #f1f1f1;
+  z-index: 1;
+}
+
+.particles-container {
+  height: 100vh;
+}
 .top-section {
   position: relative;
   .abs-cont {
     position: absolute;
-    top: 90px;
+    top: 110px;
     left: 0;
     right: 0;
     margin: auto;
