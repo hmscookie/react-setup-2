@@ -1,0 +1,80 @@
+//skills styles 
+
+.skills {
+	background-color: $color-3;
+	.icon-container {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.heading-2 {
+		color: white;
+		text-align: center;
+		}
+		.lines {
+			position: relative;
+			&:before {
+				content: '';
+				border-bottom: solid 1px #fff;
+		    position: absolute;
+		    width: 36px;
+		    left: -46px;
+		    top: 50%;
+			}
+			&:after {
+				content: '';
+				border-bottom: solid 1px #fff;
+		    position: absolute;
+		    width: 36px;
+		    right: -46px;
+		    top: 50%;
+			}
+		}
+	.icon {
+		@include svgPng('js');
+		height: 167px;
+		width: 100%;
+		background-position: center;
+		margin-top: 24px;
+	}
+	.button-ctr {
+		text-align: center;
+	}
+	.button-1 {
+		margin-top: 24px;
+	}
+	.hidden {
+		display: none;
+	}
+	.hidden.open {
+		display: flex;
+	}
+	@media only screen and (min-width: 720px) {
+		.icon {
+			width: 50%;
+			margin-top: 48px;
+		}
+		.hidden.open {
+			.icon {
+				margin-top: 24px;
+			}
+		}
+		.button-1 {
+			margin-top: 48px;
+		}
+	}
+	@media only screen and (min-width: 922px) {
+		.icon-container {
+			flex-wrap: nowrap;
+		}
+		.icon {
+			margin-left: 12px;
+			margin-right: 12px;
+			&:first-of-type {
+				margin-left: 0;
+			}
+			&:last-of-type {
+				margin-right: 0;
+			}
+		}
+	}
+}

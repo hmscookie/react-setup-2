@@ -41,7 +41,7 @@ $transition-hard: opacity 0s, background-color 0s, color 0s, border-color 0s;
  * Usage: @include svgPng('imageName');
  * Usage: @include svgPng('imageName', '../img/', 'cover');
  */
-@mixin svgPng($image, $imageLocation: '../../assets/img/', $size: 'auto auto') {
+@mixin svgPng($image, $imageLocation: '../../images/', $size: 'auto auto') {
   background-image: url('#{$imageLocation}#{$image}.png');
   background-image: url('#{$imageLocation}#{$image}.svg');
   background-size: $size;
