@@ -52,3 +52,23 @@ $color-3: #ff3333;
 		background-color: darken($color-1, 10);
 	}
 }
+
+.lines {
+	position: relative;
+	&:before {
+		content: '';
+		border-bottom: solid 1px #fff;
+    position: absolute;
+    width: 36px;
+    left: -46px;
+    top: 50%;
+	}
+	&:after {
+		content: '';
+		border-bottom: solid 1px #fff;
+    position: absolute;
+    width: 36px;
+    right: -46px;
+    top: 50%;
+	}
+}

@@ -69,6 +69,13 @@ button {
    }
 }
 
+.spacing-3 {
+  height: 48px;
+   @media only screen and (min-width: 720px) {
+    height: 87px;
+   }
+}
+
 .visually-hidden {
   height: 1px; width: 1px;
   overflow: hidden;

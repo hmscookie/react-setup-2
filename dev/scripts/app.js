@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import Intro from './intro.js';
 import Copyblock1 from './copyblock1.js';
 import Skills from './skills.js';
+import PortfolioTop from './portfolioTop.js';
 
 class App extends React.Component {
   render() {
@@ -23,15 +24,15 @@ class App extends React.Component {
             </nav>
 
             <Intro />
-           
             <h1 className="visually-hidden">Sarah Karsh porfolio site</h1>
-
 
           </header>
           <main>
             <Copyblock1 />
 
             <Skills />
+
+            <PortfolioTop />
           </main>
       </div>
     )

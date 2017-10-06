@@ -9,26 +9,7 @@
 	.heading-2 {
 		color: white;
 		text-align: center;
-		}
-		.lines {
-			position: relative;
-			&:before {
-				content: '';
-				border-bottom: solid 1px #fff;
-		    position: absolute;
-		    width: 36px;
-		    left: -46px;
-		    top: 50%;
-			}
-			&:after {
-				content: '';
-				border-bottom: solid 1px #fff;
-		    position: absolute;
-		    width: 36px;
-		    right: -46px;
-		    top: 50%;
-			}
-		}
+	}
 	.icon {
 		@include svgPng('js');
 		height: 167px;

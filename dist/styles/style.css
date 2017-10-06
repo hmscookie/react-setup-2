@@ -177,6 +177,23 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   .button-1:hover {
     background-color: #1b88b2; }
 
+.lines {
+  position: relative; }
+  .lines:before {
+    content: '';
+    border-bottom: solid 1px #fff;
+    position: absolute;
+    width: 36px;
+    left: -46px;
+    top: 50%; }
+  .lines:after {
+    content: '';
+    border-bottom: solid 1px #fff;
+    position: absolute;
+    width: 36px;
+    right: -46px;
+    top: 50%; }
+
 .button-1, nav li {
   -webkit-transition: opacity 0.25s ease, background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
   -moz-transition: opacity 0.25s ease, background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
@@ -258,6 +275,12 @@ button {
   @media only screen and (min-width: 720px) {
     .spacing-2 {
       height: 48px; } }
+
+.spacing-3 {
+  height: 48px; }
+  @media only screen and (min-width: 720px) {
+    .spacing-3 {
+      height: 87px; } }
 
 .visually-hidden {
   height: 1px;
@@ -387,22 +410,6 @@ canvas {
   .skills .heading-2 {
     color: white;
     text-align: center; }
-  .skills .lines {
-    position: relative; }
-    .skills .lines:before {
-      content: '';
-      border-bottom: solid 1px #fff;
-      position: absolute;
-      width: 36px;
-      left: -46px;
-      top: 50%; }
-    .skills .lines:after {
-      content: '';
-      border-bottom: solid 1px #fff;
-      position: absolute;
-      width: 36px;
-      right: -46px;
-      top: 50%; }
   .skills .icon {
     background-image: url("../../images/js.png");
     background-image: url("../../images/js.svg");
@@ -438,3 +445,40 @@ canvas {
         margin-left: 0; }
       .skills .icon:last-of-type {
         margin-right: 0; } }
+
+.portfolio-top {
+  text-align: center; }
+  .portfolio-top .portfolio-container {
+    position: relative; }
+  .portfolio-top .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden; }
+  .portfolio-top .view-live {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%); }
+  .portfolio-top .portfolio-container:hover .image {
+    opacity: 0.3; }
+  .portfolio-top .portfolio-container:hover .view-live {
+    opacity: 1; }
+  .portfolio-top .heading-2 {
+    color: black;
+    text-align: center;
+    margin-bottom: 27px; }
+  .portfolio-top .lines:before, .portfolio-top .lines:after {
+    border-bottom: solid 1px black; }
+  @media only screen and (min-width: 720px) {
+    .portfolio-top a {
+      display: block;
+      margin: 0 8.33%; }
+    .portfolio-top .body, .portfolio-top .button-1 {
+      width: 50%;
+      margin: 0 auto; } }
