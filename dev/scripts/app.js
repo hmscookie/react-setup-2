@@ -1,6 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ParticlesJS from './Particles.js';
+import Intro from './intro.js';
+import Copyblock1 from './copyblock1.js';
+import Skills from './skills.js';
+import PortfolioTop from './portfolioTop.js';
 
 class App extends React.Component {
   render() {
@@ -9,30 +12,27 @@ class App extends React.Component {
           <header>
             <nav>
 
-              <ul>
+              <ul className="heading-4">
                 <div className="logo">
                 </div>
                 <div>
-                  <li>About Me</li>
-                  <li>My Work</li>
-                  <li>Contact Me</li>
+                  <li tabIndex="0">About Me</li>
+                  <li tabIndex="0">My Work</li>
+                  <li tabIndex="0">Contact Me</li>
                 </div>
               </ul>
             </nav>
-            <ParticlesJS />
-            <h1 className="visually-hidden">Sarah Karsh porfolio site</h1>
 
-            <div className="container top-section">
-              <div className="abs-cont">
-                <h2 className="copy"> Hello! Im sarah<span>Toronto based front end developer, teacher, gamer</span></h2>
-                <div className="img">
-                  <img src="../images/tattoo.jpg" />
-                </div>
-              </div>
-            </div>
+            <Intro />
+            <h1 className="visually-hidden">Sarah Karsh porfolio site</h1>
 
           </header>
           <main>
+            <Copyblock1 />
+
+            <Skills />
+
+            <PortfolioTop />
           </main>
       </div>
     )

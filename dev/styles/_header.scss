@@ -1,3 +1,5 @@
+//header stylesheet 
+
 nav {
   background-color: $color-1;
   ul {
@@ -13,7 +15,7 @@ nav {
   }
   li {
     display: inline-block;
-    padding:24px 0 21px;
+    padding: 22px 0 15px;
     margin: 0 12px;
     color: white;
     border-bottom: 3px solid transparent;
@@ -25,11 +27,44 @@ nav {
   }
 }
 
+canvas {
+  // height: calc(100vh - 60px) !important;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  height: 635px !important;
+  background-color: #f1f1f1;
+  z-index: 1;
+  @media only screen and (min-width: 500px) {
+    height: 700px !important;
+  }
+  @media only screen and (min-width: 721px) {
+    height: 500px !important;
+   }
+   @media only screen and (min-width: 1260px) {
+    height: 560px !important;
+   }
+}
+
+.particles-container {
+  height: 635px;
+   @media only screen and (min-width: 500px) {
+    height: 700px;
+   }
+   @media only screen and (min-width: 721px) {
+    height: 500px;
+   }
+   @media only screen and (min-width: 1260px) {
+    height: 550px;
+   }
+}
+
 .top-section {
   position: relative;
   .abs-cont {
     position: absolute;
-    top: 90px;
+    top: 29px; //110
     left: 0;
     right: 0;
     margin: auto;
@@ -37,28 +72,56 @@ nav {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-  }
-  .copy {
-    font-size: 4rem;
-    // width: 50%;
-    span {
-      font-size: 2rem;
-      display: block;
+    h2 {
+      margin-bottom: 12px; //26
+      background-color: rgba(241, 241, 241, 0.48);
+    }
+    h3 {
+      margin-bottom: 48px;
+      background-color: rgba(241, 241, 241, 0.48);
     }
   }
-  .img {
-    // width: 50%;
+  .copy {
   }
   img {
     max-width: 100%;
   }
   @media only screen and (min-width: 720px) {
+    .abs-cont {
+      position: absolute;
+      top: 110px; //110
+      h2 {
+        margin-bottom: 26px;
+      }
+      h3 {
+        margin-bottom: 0;
+      }
+    }
     .copy {
-      font-size: 4rem;
       width: 50%;
     }
     .img {
       width: 50%;
+      padding-left: 8.33%;
+    }
+  }
+  @media only screen and (min-width: 922px) {
+    .copy {
+      padding-right: 8.33%;
+      width: calc(50% - 12px);
+      margin-right: 12px;
+    }
+    .img {
+      padding-right: 8.33%;
+      width: calc(50% - 12px);
+      margin-left: 12px;
+      padding-left: 0;
+    }
+
+  }
+  @media only screen and (min-width: 1273px) {
+    .abs-cont {
+      padding-left: 30px;
     }
   }
 }

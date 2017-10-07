@@ -1,4 +1,4 @@
-h1, h2, h3,h4, h5, h6 {
+h1, h2, h3,h4, h5, h6, p {
   margin: 0;
   font-weight: normal;
 }
@@ -8,6 +8,10 @@ html {
 body {
   font-size: 1.6rem;
   font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: $color-2;
 }
 
 ul {
@@ -28,44 +32,53 @@ button {
   box-shadow: none;
 }
 
-$color-1: rgb(34, 170, 222);
 .container {
   margin: 0 auto;
   max-width: 1200px;
 }
 
-.visually-hidden {
-    height: 1px; width: 1px;
-    overflow: hidden;
-    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-    clip: rect(1px, 1px, 1px, 1px);
-}
-
-$transition-speed: 0.25s;
-$transition-soft: opacity $transition-speed ease, background-color $transition-speed ease, color $transition-speed ease, border-color $transition-speed ease;
-$transition-hard: opacity 0s, background-color 0s, color 0s, border-color 0s;
-
-@mixin transition-soft($transition: $transition-soft) {
- -webkit-transition:  $transition;
- -moz-transition:     $transition;
- -ms-transition:      $transition;
- -o-transition:       $transition;
-  transition:         $transition;
-}
-
-@mixin transition-hard($transition: $transition-hard) {
-  -webkit-transition:  $transition;
-  -moz-transition:     $transition;
-  -ms-transition:      $transition;
-  -o-transition:       $transition;
-   transition:         $transition;
-}
-
-// Usage: @extend %soft-transition;
-%soft-transition {
-  @include transition-soft();
-
-  &:hover {
-    @include transition-hard();
+.left-50 {
+  @media only screen and (min-width: 720px) {
+    width: 50%;
+    padding-right: 12px;
   }
+}
+
+.right-50 {
+  @media only screen and (min-width: 720px) {
+    width: 50%;
+    padding-left: 12px;
+  }
+}
+
+.row {
+  margin: 0 30px;
+}
+
+.spacing {
+  height: 86px;
+   @media only screen and (min-width: 720px) {
+    height: 102px;
+   }
+}
+
+.spacing-2 {
+  height: 24px;
+   @media only screen and (min-width: 720px) {
+    height: 48px;
+   }
+}
+
+.spacing-3 {
+  height: 48px;
+   @media only screen and (min-width: 720px) {
+    height: 87px;
+   }
+}
+
+.visually-hidden {
+  height: 1px; width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
 }

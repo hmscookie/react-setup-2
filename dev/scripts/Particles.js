@@ -25,13 +25,8 @@ const ParticlesJS = (props) => {
                   "color": "#000000"
                 },
                 "polygon": {
-                  "nb_sides": 5
+                  "nb_sides": 1
                 },
-                "image": {
-                  "src": "img/github.svg",
-                  "width": 100,
-                  "height": 100
-                }
               },
               "opacity": {
                 "value": 1,
@@ -44,7 +39,7 @@ const ParticlesJS = (props) => {
                 }
               },
               "size": {
-                "value": 3,
+                "value": 4,
                 "random": true,
                 "anim": {
                   "enable": false,
@@ -55,10 +50,6 @@ const ParticlesJS = (props) => {
               },
               "line_linked": {
                 "enable": false,
-                "distance": 150,
-                "color": "#ffffff",
-                "opacity": 0.4,
-                "width": 1
               },
               "move": {
                 "enable": true,
@@ -114,18 +105,8 @@ const ParticlesJS = (props) => {
                 }
               }
             },
-
-
         }}
-        style={{
-            position: "absolute",
-            top: "60px",
-            left: 0,
-            width: "100%",
-            height: "calc(100vh - 60px)",
-            backgroundColor: "#f1f1f1",
-            zIndex: "1"
-        }} />
+      />
 
 	)
 }
