@@ -4,6 +4,7 @@ import Intro from './intro.js';
 import Copyblock1 from './copyblock1.js';
 import Skills from './skills.js';
 import PortfolioTop from './portfolioTop.js';
+import PortfolioSection from './portfolioSection.js';
 
 class App extends React.Component {
   render() {
@@ -33,6 +34,30 @@ class App extends React.Component {
             <Skills />
 
             <PortfolioTop />
+
+              <div className="container">
+                <div className="row">
+                  <div className="portfolioFlex">
+                    <PortfolioSection
+                      headingTitle={"Hello my name is Sarah"}
+                      blurb={"Lorem Lorem ipsum dolor sit amet, consectetuer adipiscingelit, sed diam nonummy nibh euismod tincidunt ut laoreet "}
+                    />
+                    <PortfolioSection
+                      headingTitle={"Hello my name is Sarah"}
+                      blurb={"Lorem Lorem ipsum dolor sit amet, consectetuer adipiscingelit, sed diam nonummy nibh euismod tincidunt ut laoreet "}
+                    />
+                    <PortfolioSection
+                      headingTitle={"Hello my name is Sarah"}
+                      blurb={"Lorem Lorem ipsum dolor sit amet, consectetuer adipiscingelit, sed diam nonummy nibh euismod tincidunt ut laoreet "}
+                    />
+                    <PortfolioSection
+                      headingTitle={"Hello my name is Sarah"}
+                      blurb={"Lorem Lorem ipsum dolor sit amet, consectetuer adipiscingelit, sed diam nonummy nibh euismod tincidunt ut laoreet "}
+                    />
+                  </div>
+                </div>
+              </div>
+
           </main>
       </div>
     )

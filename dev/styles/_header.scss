@@ -1,7 +1,10 @@
-//header stylesheet 
+//header stylesheet
 
 nav {
   background-color: $color-1;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
   ul {
     display: flex;
     justify-content: space-between;
@@ -64,7 +67,7 @@ canvas {
   position: relative;
   .abs-cont {
     position: absolute;
-    top: 29px; //110
+    top: 89px; //110
     left: 0;
     right: 0;
     margin: auto;
@@ -89,7 +92,7 @@ canvas {
   @media only screen and (min-width: 720px) {
     .abs-cont {
       position: absolute;
-      top: 110px; //110
+      top: 170px; //110
       h2 {
         margin-bottom: 26px;
       }

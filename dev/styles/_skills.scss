@@ -1,10 +1,11 @@
-//skills styles 
+//skills styles
 
 .skills {
 	background-color: $color-3;
 	.icon-container {
 		display: flex;
 		flex-wrap: wrap;
+		justify-content: space-between;
 	}
 	.heading-2 {
 		color: white;
@@ -13,9 +14,15 @@
 	.icon {
 		@include svgPng('js');
 		height: 167px;
-		width: 100%;
+		width: calc(50% - 12px);
 		background-position: center;
 		margin-top: 24px;
+		&:nth-of-type(2n) {
+			margin-left: 12px;
+		}
+		&:nth-of-type(odd) {
+			margin-right: 12px;
+		}
 	}
 	.button-ctr {
 		text-align: center;
@@ -33,6 +40,12 @@
 		.icon {
 			width: 50%;
 			margin-top: 48px;
+			&:nth-of-type(2n) {
+				margin-left: 0;
+			}
+			&:nth-of-type(odd) {
+				margin-right: 0;
+			}
 		}
 		.hidden.open {
 			.icon {
@@ -50,6 +63,12 @@
 		.icon {
 			margin-left: 12px;
 			margin-right: 12px;
+			&:nth-of-type(2n) {
+				margin-left: 12px;
+			}
+			&:nth-of-type(odd) {
+				margin-right: 12px;
+			}
 			&:first-of-type {
 				margin-left: 0;
 			}

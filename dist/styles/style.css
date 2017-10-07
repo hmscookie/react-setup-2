@@ -172,10 +172,10 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 
 .button-1 {
   color: white;
-  background-color: #22aade;
+  background-color: #9FB79B;
   padding: 6px 12px 7px; }
   .button-1:hover {
-    background-color: #1b88b2; }
+    background-color: #83a27d; }
 
 .lines {
   position: relative; }
@@ -291,7 +291,10 @@ button {
   clip: rect(1px, 1px, 1px, 1px); }
 
 nav {
-  background-color: #22aade; }
+  background-color: #9FB79B;
+  position: fixed;
+  width: 100%;
+  z-index: 100; }
   nav ul {
     display: flex;
     justify-content: space-between;
@@ -345,7 +348,7 @@ canvas {
   position: relative; }
   .top-section .abs-cont {
     position: absolute;
-    top: 29px;
+    top: 89px;
     left: 0;
     right: 0;
     margin: auto;
@@ -364,7 +367,7 @@ canvas {
   @media only screen and (min-width: 720px) {
     .top-section .abs-cont {
       position: absolute;
-      top: 110px; }
+      top: 170px; }
       .top-section .abs-cont h2 {
         margin-bottom: 26px; }
       .top-section .abs-cont h3 {
@@ -403,10 +406,11 @@ canvas {
       padding-top: 96px; } }
 
 .skills {
-  background-color: #ff3333; }
+  background-color: #F18A80; }
   .skills .icon-container {
     display: flex;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    justify-content: space-between; }
   .skills .heading-2 {
     color: white;
     text-align: center; }
@@ -416,9 +420,13 @@ canvas {
     background-size: "auto auto";
     background-repeat: no-repeat;
     height: 167px;
-    width: 100%;
+    width: calc(50% - 12px);
     background-position: center;
     margin-top: 24px; }
+    .skills .icon:nth-of-type(2n) {
+      margin-left: 12px; }
+    .skills .icon:nth-of-type(odd) {
+      margin-right: 12px; }
   .skills .button-ctr {
     text-align: center; }
   .skills .button-1 {
@@ -431,6 +439,10 @@ canvas {
     .skills .icon {
       width: 50%;
       margin-top: 48px; }
+      .skills .icon:nth-of-type(2n) {
+        margin-left: 0; }
+      .skills .icon:nth-of-type(odd) {
+        margin-right: 0; }
     .skills .hidden.open .icon {
       margin-top: 24px; }
     .skills .button-1 {
@@ -441,6 +453,10 @@ canvas {
     .skills .icon {
       margin-left: 12px;
       margin-right: 12px; }
+      .skills .icon:nth-of-type(2n) {
+        margin-left: 12px; }
+      .skills .icon:nth-of-type(odd) {
+        margin-right: 12px; }
       .skills .icon:first-of-type {
         margin-left: 0; }
       .skills .icon:last-of-type {
@@ -473,6 +489,8 @@ canvas {
     color: black;
     text-align: center;
     margin-bottom: 27px; }
+  .portfolio-top .heading-3 {
+    margin-bottom: 7px; }
   .portfolio-top .lines:before, .portfolio-top .lines:after {
     border-bottom: solid 1px black; }
   @media only screen and (min-width: 720px) {
@@ -482,3 +500,49 @@ canvas {
     .portfolio-top .body, .portfolio-top .button-1 {
       width: 50%;
       margin: 0 auto; } }
+
+.portfolioFlex {
+  text-align: center; }
+  .portfolioFlex .portfolio-section .portfolio-container {
+    position: relative; }
+  .portfolioFlex .portfolio-section .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden; }
+  .portfolioFlex .portfolio-section .view-live {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%); }
+  .portfolioFlex .portfolio-section .portfolio-container:hover .image {
+    opacity: 0.3; }
+  .portfolioFlex .portfolio-section .portfolio-container:hover .view-live {
+    opacity: 1; }
+  .portfolioFlex .portfolio-section .heading-3 {
+    margin-bottom: 7px; }
+  .portfolioFlex .portfolio-section .heading-2 {
+    color: black;
+    text-align: center;
+    margin-bottom: 27px; }
+  @media only screen and (min-width: 720px) {
+    .portfolioFlex {
+      margin-left: 8.33%;
+      margin-right: 8.33%;
+      display: flex;
+      flex-wrap: wrap; }
+      .portfolioFlex .portfolio-section {
+        width: calc(50% - 12px); }
+        .portfolioFlex .portfolio-section:nth-of-type(2) {
+          margin-top: 96px; }
+        .portfolioFlex .portfolio-section:nth-of-type(3) {
+          margin-top: -96px; }
+        .portfolioFlex .portfolio-section:nth-of-type(odd) {
+          margin-right: 12px; }
+        .portfolioFlex .portfolio-section:nth-of-type(even) {
+          margin-left: 12px; } }
