@@ -20,7 +20,7 @@ const Footer = (props) => {
 
             <div className="split-right">
               <p className="body"> Follow Me</p>
-              <p className="body"> E: hello @ sarahkarsh.com</p>
+              <p className="body"> LinkediIn SNAPCHAT CHATROULETTE</p>
             </div>
 
           </div>
