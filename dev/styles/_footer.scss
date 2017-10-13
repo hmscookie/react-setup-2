@@ -1,0 +1,38 @@
+//footer styles 
+.footer {
+	.logo {
+		height: 60px;
+		width: 130px;
+		background-color: black;
+	}
+	.right {
+		.split-left {
+
+		}
+		.split-right {
+			
+		}
+	}
+	@media only screen and (min-width: 720px) {
+		.row-flex {
+			display: flex;
+		}
+		.left {
+			width: calc(50% - 12px);
+			margin-right: 12px;
+		}
+		.right {
+			width: calc(50% - 12px);
+			margin-left: 12px;
+			display: flex;
+			.split-left {
+				width: calc(50% - 12px);
+				margin-right: 12px;
+			}
+			.split-right {
+				width: calc(50% - 12px);
+				margin-left: 12px;
+			}
+		}
+	}
+}

@@ -5,6 +5,8 @@ import Copyblock1 from './copyblock1.js';
 import Skills from './skills.js';
 import PortfolioTop from './portfolioTop.js';
 import PortfolioSection from './portfolioSection.js';
+import ContactForm from './contactForm.js';
+import Footer from './footer.js'
 
 class App extends React.Component {
   render() {
@@ -57,6 +59,10 @@ class App extends React.Component {
                   </div>
                 </div>
               </div>
+
+              <ContactForm />
+
+              <Footer />
 
           </main>
       </div>

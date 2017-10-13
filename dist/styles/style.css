@@ -164,7 +164,13 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   line-height: 19px;
   font-weight: 300; }
 
-.body, .button-1 {
+.heading-5 {
+  font-size: 1.2rem;
+  line-height: 16px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase; }
+
+.body, .button-1, .form input::-webkit-input-placeholder, .form textarea::-webkit-input-placeholder {
   font-size: 1.8rem;
   line-height: 24px;
   letter-spacing: 0.5px;
@@ -497,7 +503,7 @@ canvas {
     .portfolio-top a {
       display: block;
       margin: 0 8.33%; }
-    .portfolio-top .body, .portfolio-top .button-1 {
+    .portfolio-top .body, .portfolio-top .button-1, .portfolio-top .form input::-webkit-input-placeholder, .form .portfolio-top input::-webkit-input-placeholder, .portfolio-top .form textarea::-webkit-input-placeholder, .form .portfolio-top textarea::-webkit-input-placeholder {
       width: 50%;
       margin: 0 auto; } }
 
@@ -546,3 +552,57 @@ canvas {
           margin-right: 12px; }
         .portfolioFlex .portfolio-section:nth-of-type(even) {
           margin-left: 12px; } }
+
+.form {
+  background-color: #F18A80; }
+  .form .heading-2 {
+    margin-bottom: 34px; }
+  .form input, .form textarea {
+    border: 0;
+    padding: 8px 12px 7px; }
+  .form .name-email .name, .form .name-email .email {
+    margin-bottom: 21px; }
+    .form .name-email .name label, .form .name-email .name input, .form .name-email .email label, .form .name-email .email input {
+      width: 100%;
+      display: block; }
+  .form .message-container label, .form .message-container textarea {
+    width: 100%;
+    display: block; }
+  .form .message-container textarea {
+    height: 117px;
+    margin-bottom: 24px; }
+  .form .heading-5 {
+    margin-bottom: 12px; }
+  @media only screen and (min-width: 720px) {
+    .form .row-fields {
+      display: flex; }
+    .form .name-email, .form .message-container {
+      width: calc(50% - 12px); }
+      .form .name-email .email, .form .message-container .email {
+        margin-bottom: 0; }
+    .form .name-email {
+      margin-right: 12px; }
+    .form .message-container {
+      margin-left: 12px; } }
+
+.footer .logo {
+  height: 60px;
+  width: 130px;
+  background-color: black; }
+
+@media only screen and (min-width: 720px) {
+  .footer .row-flex {
+    display: flex; }
+  .footer .left {
+    width: calc(50% - 12px);
+    margin-right: 12px; }
+  .footer .right {
+    width: calc(50% - 12px);
+    margin-left: 12px;
+    display: flex; }
+    .footer .right .split-left {
+      width: calc(50% - 12px);
+      margin-right: 12px; }
+    .footer .right .split-right {
+      width: calc(50% - 12px);
+      margin-left: 12px; } }
