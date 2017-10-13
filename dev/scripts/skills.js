@@ -21,7 +21,7 @@ class Skills extends React.Component {
   render() {
     return (
        <section className="skills">
-         <div className="container"> 
+         <div className="container">
          <div className="spacing-2"></div>
           <h2 className="heading-2"><span className="lines">My Skills</span></h2>
           <div className="row icon-container">
@@ -38,7 +38,7 @@ class Skills extends React.Component {
               <p className="visually-hidden">Javacript</p>
             </div>
            </div>
-         
+
            <div className="row button-ctr">
              <div className="hidden icon-container">
             <div className="icon">
@@ -56,7 +56,7 @@ class Skills extends React.Component {
             <button className="button-1" onClick={event => this.handleClick(event)}>Show all skills</button>
           </div>
           <div className="spacing-2"></div>
-        </div> 
+        </div>
       </section>
     )
   }
