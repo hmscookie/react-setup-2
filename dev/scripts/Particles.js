@@ -16,7 +16,7 @@ const ParticlesJS = (props) => {
                 }
               },
               "color": {
-                "value": ["#f9ab9e", "#9d2904",  "#ffbf22", "#0fb5df"]
+                "value": ["#efb49a", "#e77a82",  "#b67084", "695c79", "#3d5c7a"]
               },
               "shape": {
                 "type": "circle",

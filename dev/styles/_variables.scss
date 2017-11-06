@@ -1,6 +1,10 @@
-$color-1: #3d5c7a; //rgb(34, 170, 222 blue
+$color-1: #3d5c7a; //dark blue
 $color-2: #f1f1f1; //light grey
-$color-3: #d85662; //ff3333
+$color-3: #d85662; //
+$color-4: #695c79; //dark purple 
+$color-5: #b67084; //pink purple
+$color-6: #e77a82; //pink orange
+$color-7: #efb49a; //peach
 
 
 .heading-1 {
@@ -57,12 +61,16 @@ $color-3: #d85662; //ff3333
 
 .button-1 {
 	@extend .body;
-	color: $color-1;
-	background-color: #d85662; //#f7cfad
+	font-weight: 400;
+	color: black;
+	background-color: white; //#f7cfad
 	@extend %soft-transition;
-	padding: 6px 12px 7px;
+	padding: 6px 12px 6px;
+	// border: 2px solid transparent;
 	&:hover {
-		background-color: darken($color-1, 10);
+		background-color: $color-2;
+		// color: #d85662;
+		// border: 2px solid $color-7;
 	}
 }
 
@@ -84,4 +92,11 @@ $color-3: #d85662; //ff3333
     right: -46px;
     top: 50%;
 	}
+}
+
+::selection {
+  background: rgba($color-7, 0.3); /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: rgba($color-7, 0.3); /* Gecko Browsers */
 }

@@ -10,9 +10,9 @@ class Skills extends React.Component {
   }
 
   handleClick(event) {
-    $(event.currentTarget).prev(".hidden").toggleClass('open');
+    $(event.currentTarget).prev(".hidden").slideToggle().toggleClass('open');
     if ($(".hidden").hasClass('open')) {
-      $(event.currentTarget).text('close skills');
+      $(event.currentTarget).text('closed skills');
     } else {
       $(event.currentTarget).text('show all skills');
     }
@@ -41,18 +41,20 @@ class Skills extends React.Component {
 
            <div className="row button-ctr">
              <div className="hidden icon-container">
-            <div className="icon">
-              <p className="visually-hidden">Javacript</p>
-            </div>
-            <div className="icon">
-              <p className="visually-hidden">Javacript</p></div>
-            <div className="icon">
-              <p className="visually-hidden">Javacript</p>
-            </div>
-            <div className="icon">
-              <p className="visually-hidden">Javacript</p>
-            </div>
-          </div>
+                 <div className="icon-flex">
+                  <div className="icon">
+                    <p className="visually-hidden">Javacript</p>
+                  </div>
+                  <div className="icon">
+                    <p className="visually-hidden">Javacript</p></div>
+                  <div className="icon">
+                    <p className="visually-hidden">Javacript</p>
+                  </div>
+                  <div className="icon">
+                    <p className="visually-hidden">Javacript</p>
+                  </div>
+                </div>
+              </div>
             <button className="button-1" onClick={event => this.handleClick(event)}>Show all skills</button>
           </div>
           <div className="spacing-2"></div>

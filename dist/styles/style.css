@@ -183,11 +183,12 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   color: #2c363a; }
 
 .button-1 {
-  color: #3d5c7a;
-  background-color: #d85662;
-  padding: 6px 12px 7px; }
+  font-weight: 400;
+  color: black;
+  background-color: white;
+  padding: 6px 12px 6px; }
   .button-1:hover {
-    background-color: #2c4258; }
+    background-color: #f1f1f1; }
 
 .lines {
   position: relative; }
@@ -205,6 +206,14 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
     width: 36px;
     right: -46px;
     top: 50%; }
+
+::selection {
+  background: rgba(239, 180, 154, 0.3);
+  /* WebKit/Blink Browsers */ }
+
+::-moz-selection {
+  background: rgba(239, 180, 154, 0.3);
+  /* Gecko Browsers */ }
 
 .button-1, nav li {
   -webkit-transition: opacity 0.25s ease, background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
@@ -294,6 +303,9 @@ button {
     .spacing-3 {
       height: 87px; } }
 
+.spacing-4 {
+  height: 96px; }
+
 .visually-hidden {
   height: 1px;
   width: 1px;
@@ -325,6 +337,8 @@ nav {
     nav li:hover {
       border-bottom: 3px solid white;
       cursor: pointer; }
+    nav li a {
+      color: white; }
 
 canvas {
   position: absolute;
@@ -418,8 +432,12 @@ canvas {
       padding-top: 96px; } }
 
 .skills {
-  background-color: #d85662; }
+  background-color: #b67084; }
   .skills .icon-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+  .skills .icon-flex {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between; }
@@ -560,9 +578,14 @@ canvas {
           margin-left: 12px; } }
 
 .form {
-  background-color: #9fb79b; }
+  background-color: #695c79; }
   .form .heading-2 {
-    margin-bottom: 34px; }
+    margin-bottom: 34px;
+    color: #f1f1f1; }
+  .form p {
+    color: #f1f1f1;
+    margin-bottom: 30px;
+    max-width: 90%; }
   .form input, .form textarea {
     border: 0;
     padding: 8px 12px 7px; }
@@ -578,7 +601,8 @@ canvas {
     height: 117px;
     margin-bottom: 24px; }
   .form .heading-5 {
-    margin-bottom: 12px; }
+    margin-bottom: 12px;
+    color: #f1f1f1; }
   @media only screen and (min-width: 720px) {
     .form .row-fields {
       display: flex; }
@@ -589,7 +613,9 @@ canvas {
     .form .name-email {
       margin-right: 12px; }
     .form .message-container {
-      margin-left: 12px; } }
+      margin-left: 12px; }
+    .form p {
+      max-width: 75%; } }
 
 .footer .logo {
   height: 60px;

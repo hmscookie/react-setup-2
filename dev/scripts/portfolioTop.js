@@ -11,7 +11,7 @@ class PortfolioTop extends React.Component {
 
   render() {
     return (
-       <div className="portfolio-top">
+       <div className="portfolio-top" id="myWork">
          <div className="container">
 
           <div className="row"> {/*top blurb*/}

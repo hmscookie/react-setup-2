@@ -2,7 +2,7 @@ import React from 'react';
 
 const Copyblock1 = (props) => {
 	return (
-    <section className="copyblock1">
+    <section className="copyblock1" id="aboutMe">
       <div className="container">
         <div className="row copy1-ctr">
 

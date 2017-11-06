@@ -3,6 +3,7 @@ import React from 'react';
 const Footer = (props) => {
 	return (
     <footer className="footer">
+    <div className="spacing-4"></div>
       <div className="container">
         <div className="row row-flex">
 
@@ -28,6 +29,7 @@ const Footer = (props) => {
         </div>
       </div>
       <div className="spacing"></div>
+      <div className="spacing-4"></div>
     </footer>
 	)
 }

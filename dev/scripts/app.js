@@ -6,22 +6,23 @@ import Skills from './skills.js';
 import PortfolioTop from './portfolioTop.js';
 import PortfolioSection from './portfolioSection.js';
 import ContactForm from './contactForm.js';
-import Footer from './footer.js'
+import Footer from './footer.js';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 class App extends React.Component {
   render() {
     return (
       <div>
-          <header>
+        <header>
             <nav>
 
               <ul className="heading-4">
                 <div className="logo">
                 </div>
                 <div>
-                  <li tabIndex="0">About Me</li>
-                  <li tabIndex="0">My Work</li>
-                  <li tabIndex="0">Contact Me</li>
+                  <li><AnchorLink href='#aboutMe'>About Me</AnchorLink></li>
+                  <li><AnchorLink href='#myWork'>My Work</AnchorLink></li>
+                  <li><AnchorLink href='#contactMe'>Contact Me</AnchorLink></li>
                 </div>
               </ul>
             </nav>
