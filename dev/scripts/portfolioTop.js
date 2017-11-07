@@ -1,5 +1,6 @@
 import React from 'react';
 import {render} from 'react-dom';
+import Zoom from 'react-reveal/Zoom'; 
 
 
 //Main portfolio
@@ -16,8 +17,8 @@ class PortfolioTop extends React.Component {
 
           <div className="row"> {/*top blurb*/}
             <div className="spacing-3"></div>
-            <h2 className="heading-2"><span className="lines">My Work</span></h2>
-            <p className="body">Lorem ipsum dolor sit amet, consectetuer adipiscingelit, sed diam nonummy nibh euismod tincidunt ut laoreet</p>
+            <Zoom delay={500}><h2 className="heading-2"><span className="lines">My Work</span></h2></Zoom>
+            <Zoom delay={1000}><p className="body">Lorem ipsum dolor sit amet, consectetuer adipiscingelit, sed diam nonummy nibh euismod tincidunt ut laoreet</p></Zoom>
             <div className="spacing-3"></div>
           </div>
 

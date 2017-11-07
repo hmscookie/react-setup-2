@@ -10,7 +10,7 @@ class Skills extends React.Component {
   }
 
   handleClick(event) {
-    $(event.currentTarget).prev(".hidden").slideToggle().toggleClass('open');
+    $(event.currentTarget).prev(".hidden").slideToggle('open');
     if ($(".hidden").hasClass('open')) {
       $(event.currentTarget).text('closed skills');
     } else {

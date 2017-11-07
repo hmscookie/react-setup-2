@@ -2,6 +2,8 @@ import React from 'react';
 import {render} from 'react-dom';
 import $ from 'jquery';
 import ParticlesJS from './Particles.js';
+import Zoom from 'react-reveal/Zoom'; 
+
 //intro section of the page
 class Intro extends React.Component {
 
@@ -20,8 +22,8 @@ class Intro extends React.Component {
               <div className="abs-cont">
 
                 <div className="copy">
-                  <h2 className="heading-1"> Hello! I'm Sarah Karsh </h2>
-                  <h3 className="heading-3">Toronto based front end developer, a11y advocate, life long learner, and plant enthusiast</h3>
+                  <Zoom><h2 className="heading-1"> Hello! I'm Sarah Karsh </h2></Zoom>
+                  <h3 className="heading-3">Toronto based front end developer, a11y advocate, life long learner, and plant enthusiast.</h3>
                 </div>
 
                 <div className="img">
