@@ -589,7 +589,7 @@ main {
     .portfolio-top .a-item {
       display: block;
       margin: 0 8.33%; }
-    .portfolio-top .body, .portfolio-top .button-1, .portfolio-top .form input::-webkit-input-placeholder, .form .portfolio-top input::-webkit-input-placeholder, .portfolio-top .form textarea::-webkit-input-placeholder, .form .portfolio-top textarea::-webkit-input-placeholder {
+    .portfolio-top .hello {
       width: 50%;
       margin: 0 auto; } }
 
@@ -650,7 +650,8 @@ main {
     max-width: 90%; }
   .form input, .form textarea {
     border: 0;
-    padding: 8px 12px 7px; }
+    padding: 8px 12px 7px;
+    outline: 1px solid white; }
   .form .name-email .name, .form .name-email .email {
     margin-bottom: 21px; }
     .form .name-email .name label, .form .name-email .name input, .form .name-email .email label, .form .name-email .email input {
