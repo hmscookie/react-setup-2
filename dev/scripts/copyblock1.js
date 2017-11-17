@@ -15,7 +15,7 @@ const Copyblock1 = (props) => {
 
           <div className="copy-right right-50">
             <Rotate bottom left delay={500}><h3 className="heading-2">What does she know?</h3>
-            <p className="body">I know HTML5, CSS3, responsive design, JavaScript, jQuery, Wordpress, Visual Composer, PHP, React, Git, Gulp, and Web Accessiblity Standards. I'm also currently learning digital design and UX at HackerYou</p></Rotate>
+            <p className="body">I know HTML5, CSS3, responsive design, JavaScript, jQuery, Wordpress, Visual Composer, PHP, React, Git, Gulp, Adobe Illustrator, Sketch, and Web Accessiblity Standards. I'm currently learning digital design and UX at HackerYou.</p></Rotate>
           </div>
         </div>
       </div>

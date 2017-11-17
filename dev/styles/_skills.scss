@@ -29,6 +29,27 @@
 			margin-right: 12px;
 		}
 	}
+	.wordpress {
+		@include svgPng('wordpress');
+	}
+	.css {
+		@include svgPng('css');
+	}
+	.html {
+		@include svgPng('html');
+	}
+	.react {
+		@include svgPng('react');
+		background-color: white;
+	}
+	.git {
+		@include svgPng('git');
+		background-color: white;
+	}
+	.ai {
+		@include svgPng('ai');
+		background-color: white;
+	}
 	.button-ctr {
 		text-align: center;
 	}

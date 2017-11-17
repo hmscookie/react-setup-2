@@ -398,8 +398,10 @@ main {
     .top-section .abs-cont h3 {
       margin-bottom: 48px;
       background-color: rgba(241, 241, 241, 0.48); }
-  .top-section img {
-    max-width: 100%; }
+  .top-section .img {
+    width: 70%; }
+    .top-section .img img {
+      max-width: 100%; }
   @media only screen and (min-width: 720px) {
     .top-section .abs-cont {
       position: absolute;
@@ -423,7 +425,9 @@ main {
       padding-right: 8.33%;
       width: calc(50% - 12px);
       margin-left: 12px;
-      padding-left: 0; } }
+      padding-left: 0; }
+      .top-section .img img {
+        width: 80%; } }
   @media only screen and (min-width: 1273px) {
     .top-section .abs-cont {
       padding-left: 30px; } }
@@ -443,7 +447,7 @@ main {
       padding-top: 96px; } }
 
 .skills {
-  background-color: #b67084; }
+  background-color: #CC6666; }
   .skills .icon-container {
     display: flex;
     flex-wrap: wrap;
@@ -468,6 +472,39 @@ main {
       margin-left: 12px; }
     .skills .icon:nth-of-type(odd) {
       margin-right: 12px; }
+  .skills .wordpress {
+    background-image: url("../../images/wordpress.png");
+    background-image: url("../../images/wordpress.svg");
+    background-size: "auto auto";
+    background-repeat: no-repeat; }
+  .skills .css {
+    background-image: url("../../images/css.png");
+    background-image: url("../../images/css.svg");
+    background-size: "auto auto";
+    background-repeat: no-repeat; }
+  .skills .html {
+    background-image: url("../../images/html.png");
+    background-image: url("../../images/html.svg");
+    background-size: "auto auto";
+    background-repeat: no-repeat; }
+  .skills .react {
+    background-image: url("../../images/react.png");
+    background-image: url("../../images/react.svg");
+    background-size: "auto auto";
+    background-repeat: no-repeat;
+    background-color: white; }
+  .skills .git {
+    background-image: url("../../images/git.png");
+    background-image: url("../../images/git.svg");
+    background-size: "auto auto";
+    background-repeat: no-repeat;
+    background-color: white; }
+  .skills .ai {
+    background-image: url("../../images/ai.png");
+    background-image: url("../../images/ai.svg");
+    background-size: "auto auto";
+    background-repeat: no-repeat;
+    background-color: white; }
   .skills .button-ctr {
     text-align: center; }
   .skills .button-1 {
