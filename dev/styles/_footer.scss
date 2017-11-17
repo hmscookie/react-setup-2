@@ -7,12 +7,17 @@
 	}
 	.right {
 		.split-left {
+			margin-top: 12px;
 
 		}
 		.split-right {
-			
+			margin-top: 12px;
+			a:first-of-type {
+				margin-right: 12px;
+			}
 		}
 	}
+
 	@media only screen and (min-width: 720px) {
 		.row-flex {
 			display: flex;
@@ -28,10 +33,12 @@
 			.split-left {
 				width: calc(50% - 12px);
 				margin-right: 12px;
+				margin-top: 0;
 			}
 			.split-right {
 				width: calc(50% - 12px);
 				margin-left: 12px;
+				margin-top: 0;
 			}
 		}
 	}

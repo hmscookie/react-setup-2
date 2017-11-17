@@ -19,7 +19,7 @@ const Copyblock1 = (props) => {
           </div>
         </div>
       </div>
-      <div className="spacing"></div>
+      <div className="spacing-3"></div>
     </section>
 	)
 }

@@ -4,11 +4,11 @@ import React from 'react';
 const contactForm = (props) => {
 	return (
     <section className="form" id="contactMe">
-      <div className="spacing"></div>
+      <div className="spacing-3"></div>
         <div className="container">
           <div className="row">
             <h2 className="heading-2">Looking for a developer?</h2>
-            <p>Lorem Lorem ipsum dolor sit amet, consectetuer adipiscingelit, sed diam nonummy nibh euismod tincidunt ut laoreetLorem Lorem ipsum dolor sit amet, consectetuer adipiscingelit, sed diam nonummy nibh euismod tincidunt ut laoreet</p>
+            <p className="body">Do you have a project you'd like me to code? Leave me a message below and I'll get back to you soon.</p>
           </div>
 
           <form action="http://www.focuspocus.io/magic/hello@sarahkarsh.com" method="POST">
@@ -57,7 +57,7 @@ const contactForm = (props) => {
           </form>
 
         </div> {/*close*/}
-      <div className="spacing"></div>
+      <div className="spacing-3"></div>
     </section>
 	)
 }

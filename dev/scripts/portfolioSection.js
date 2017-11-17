@@ -1,6 +1,6 @@
 import React from 'react';
 import {render} from 'react-dom';
-
+import Zoom from 'react-reveal/Zoom'; 
 
 //Main portfolio
 class PortfolioSection extends React.Component {
@@ -16,8 +16,7 @@ class PortfolioSection extends React.Component {
             <a href="#" label="go to portfolio piece">
               <div className="portfolio-container">
 
-                <img className="image" src="../images/tattoo.jpg" />
-
+                <img className="image" alt={this.props.alt} src={this.props.src}/>
               <div className="view-live">
                 <p className="heading-2">View live site</p>
               </div>
@@ -29,7 +28,7 @@ class PortfolioSection extends React.Component {
           <div className="row"> {/*top blurb*/}
             <div className="spacing-2"></div>
             <h3 className="heading-3">{this.props.headingTitle}</h3>
-            <p className="body">{this.props.blurb}</p>
+            <Zoom><p className="body">{this.props.blurb}</p></Zoom>
             <div className="spacing-3"></div>
           </div>
 

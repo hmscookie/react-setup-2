@@ -10,11 +10,11 @@ class Skills extends React.Component {
   }
 
   handleClick(event) {
-    $(event.currentTarget).prev(".hidden").slideToggle('open');
-    if ($(".hidden").hasClass('open')) {
-      $(event.currentTarget).text('closed skills');
+    $(event.currentTarget).prev(".hidden").slideToggle('open').toggleClass('text');
+    if ($(".hidden").hasClass('text')) {
+      $(event.currentTarget).text('Close Skills');
     } else {
-      $(event.currentTarget).text('show all skills');
+      $(event.currentTarget).text('View All Skills');
     }
   }
 
@@ -28,11 +28,11 @@ class Skills extends React.Component {
             <div className="icon js">
              <p className="visually-hidden">Javacript</p>
              </div>
-            <div className="icon css">
-             <p className="visually-hidden">C.s.s.</p>
+            <div className="icon scss">
+             <p className="visually-hidden">sass</p>
             </div>
-            <div className="icon html">
-             <p className="visually-hidden">h.t.m.l.</p>
+            <div className="icon react">
+             <p className="visually-hidden">react</p>
             </div>
             <div className="icon wordpress">
               <p className="visually-hidden">wordpress</p>
@@ -42,20 +42,20 @@ class Skills extends React.Component {
            <div className="row button-ctr">
              <div className="hidden icon-container">
                  <div className="icon-flex">
-                  <div className="icon react">
-                    <p className="visually-hidden">react</p>
+                  <div className="icon html">
+                    <p className="visually-hidden">h.t.m.l.</p>
                   </div>
                   <div className="icon git">
                     <p className="visually-hidden">git</p></div>
-                  <div className="icon scss">
-                    <p className="visually-hidden">sscss</p>
+                  <div className="icon css">
+                    <p className="visually-hidden">C.s.s.</p>
                   </div>
                   <div className="icon ai">
                     <p className="visually-hidden">adobe illustator</p>
                   </div>
                 </div>
               </div>
-            <button className="button-1" onClick={event => this.handleClick(event)}>Show all skills</button>
+            <button className="button-1" onClick={event => this.handleClick(event)}>Show All Skills</button>
           </div>
           <div className="spacing-2"></div>
         </div>

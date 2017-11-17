@@ -41,22 +41,20 @@ class App extends React.Component {
               <div className="container">
                 <div className="row">
                   <div className="portfolioFlex">
+                  
                     <PortfolioSection
-                      headingTitle={"Hello my name is Sarah"}
-                      blurb={"Lorem Lorem ipsum dolor sit amet, consectetuer adipiscingelit, sed diam nonummy nibh euismod tincidunt ut laoreet "}
+                      headingTitle={"Custom WordPress Site"}
+                      blurb={"This site was coded with custom fields. This makes editing the content simple and quick for the user. This site is also fully responsive (mobile-friendly!) and accessible"}
+                      src={"../images/everywhere.png"}
+                      alt={"A screenshot of everywhere. Logo in the middle of the page and misty trees behind it."}
                     />
                     <PortfolioSection
-                      headingTitle={"Hello my name is Sarah"}
-                      blurb={"Lorem Lorem ipsum dolor sit amet, consectetuer adipiscingelit, sed diam nonummy nibh euismod tincidunt ut laoreet "}
+                      headingTitle={"2016-2017 Portfolio Site"}
+                      blurb={"My 2017 personal site, a single page responsive website, was made with HTML and CSS best practices in mind."}
+                      src={"../images/sarah-2017.png"}
+                      alt={"A screenshot of my old site it sort of looks like a site made for pampers - light blue and pink. My new site has much nicer colours."}
                     />
-                    <PortfolioSection
-                      headingTitle={"Hello my name is Sarah"}
-                      blurb={"Lorem Lorem ipsum dolor sit amet, consectetuer adipiscingelit, sed diam nonummy nibh euismod tincidunt ut laoreet "}
-                    />
-                    <PortfolioSection
-                      headingTitle={"Hello my name is Sarah"}
-                      blurb={"Lorem Lorem ipsum dolor sit amet, consectetuer adipiscingelit, sed diam nonummy nibh euismod tincidunt ut laoreet "}
-                    />
+
                   </div>
                 </div>
               </div>

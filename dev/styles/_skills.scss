@@ -50,6 +50,10 @@
 		@include svgPng('ai');
 		background-color: white;
 	}
+	.scss {
+		@include svgPng('sass');
+		background-color: white;
+	}
 	.button-ctr {
 		text-align: center;
 	}
