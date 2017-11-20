@@ -22,11 +22,11 @@ class Intro extends React.Component {
 
                 <div className="copy">
                   <h2 className="heading-1"> Hello, I'm Sarah Karsh. </h2>
-                  <h3 className="heading-3">Toronto based front end developer, a11y advocate, life long learner, and something else.</h3>
+                  <h3 className="heading-3">Toronto based front end developer, a11y advocate, life long learner, and digital designer.</h3>
                 </div>
 
                 <div className="img">
-                  <img alt="me. I've got blonde short hair, and i'm standing against the wall. I have a half smile on because I don't really smile in photos." src="../images/sarah.jpg" />
+                  <img alt="me. I've got blonde short hair, and i'm standing against the wall. I have a half smile on because I don't really smile in photos." src="/images/sarah.jpg" />
                 </div>
 
               </div>

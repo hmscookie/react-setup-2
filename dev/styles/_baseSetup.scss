@@ -5,9 +5,23 @@ h1, h2, h3,h4, h5, h6, p {
 html {
   font-size: 10px;
 }
+
 body {
-  font-size: 1.6rem;
   font-family: 'Roboto', sans-serif;
+  font-size: 1.8rem;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  font-weight: 300;
+  color: #2c363a;
+}
+
+.body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.8rem;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  font-weight: 300;
+  color: #2c363a;
 }
 
 body {

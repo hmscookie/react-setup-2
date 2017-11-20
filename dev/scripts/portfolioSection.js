@@ -13,7 +13,7 @@ class PortfolioSection extends React.Component {
     return (
        <div className="portfolio-section">
 
-            <a href="#" label="go to portfolio piece">
+            <a href={this.props.href} target="_blank" label="go to portfolio piece">
               <div className="portfolio-container">
 
                 <img className="image" alt={this.props.alt} src={this.props.src}/>

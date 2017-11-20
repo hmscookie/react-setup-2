@@ -22,6 +22,7 @@
 		width: calc(50% - 12px);
 		background-position: center;
 		margin-top: 24px;
+		background-color: white;
 		&:nth-of-type(2n) {
 			margin-left: 12px;
 		}
@@ -31,24 +32,27 @@
 	}
 	.wordpress {
 		@include svgPng('wordpress');
+
 	}
 	.css {
 		@include svgPng('css');
+
 	}
 	.html {
 		@include svgPng('html');
+
 	}
 	.react {
 		@include svgPng('react');
-		background-color: white;
+
 	}
 	.git {
 		@include svgPng('git');
-		background-color: white;
+
 	}
 	.ai {
 		@include svgPng('ai');
-		background-color: white;
+
 	}
 	.scss {
 		@include svgPng('sass');
@@ -86,7 +90,7 @@
 			margin-top: 48px;
 		}
 	}
-	@media only screen and (min-width: 922px) {
+	@media only screen and (min-width: 720px) {
 		.icon-container {
 			flex-wrap: nowrap;
 		}
