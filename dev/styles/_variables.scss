@@ -63,6 +63,7 @@ $color-7: #efb49a; //peach
 	font-weight: 400;
 	color: black;
 	background-color: white; //#f7cfad
+	border-radius: 0;
 	@extend %soft-transition;
 	padding: 6px 12px 6px;
 	&:hover {

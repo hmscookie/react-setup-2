@@ -14,23 +14,22 @@ class App extends React.Component {
     return (
       <div>
         <header>
-            <nav>
+          <nav>
 
-              <ul className="heading-4">
-                <div className="logo">
-                </div>
-                <div>
-                  <li><AnchorLink offset='59' href='#aboutMe'>About Me</AnchorLink></li>
-                  <li><AnchorLink offset='59' href='#myWork'>My Work</AnchorLink></li>
-                  <li><AnchorLink offset='59' href='#contactMe'>Contact Me</AnchorLink></li>
-                </div>
-              </ul>
-            </nav>
+            <ul className="heading-4">
+              <div className="logo"></div>
+              <div>
+                <li><AnchorLink offset='59' href='#aboutMe'>About Me</AnchorLink></li>
+                <li><AnchorLink offset='59' href='#myWork'>My Work</AnchorLink></li>
+                <li><AnchorLink offset='59' href='#contactMe'>Contact Me</AnchorLink></li>
+              </div>
+            </ul>
+          </nav>
+        </header>
 
-            <Intro />
-            <h1 className="visually-hidden">Sarah Karsh's porfolio site</h1>
+        <Intro />
+        <h1 className="visually-hidden">Sarah Karsh's porfolio site</h1>
 
-          </header>
           <main>
             <Copyblock1 />
 
@@ -44,10 +43,10 @@ class App extends React.Component {
                   
                     <PortfolioSection
                       headingTitle={"Custom WordPress Site"}
-                      blurb={"This site was coded with custom fields. This makes editing the content simple and quick for the user. This site is also fully responsive (mobile-friendly!) and accessible."}
-                      src={"/images/everywhere.png"}
-                      alt={"A screenshot of everywhere. Logo in the middle of the page and misty trees behind it."}
-                      href={"http://sarahkarsh.com/everywhere/"}
+                      blurb={"Using the LCBO’s API, I coded this site to help users pick a craft beer while delivering information about Toronto’s craft breweries."}
+                      src={"/images/craft-brew.png"}
+                      alt={"screenshot of a drunk dinosaur that wants you to take a quiz."}
+                      href={"http://sarahkarsh.com/craftbeerpicker/"}
                     />
                     <PortfolioSection
                       headingTitle={"2016-2017 Portfolio Site"}
@@ -55,6 +54,21 @@ class App extends React.Component {
                       src={"/images/sarah-2017.png"}
                       alt={"A screenshot of my old site it sort of looks like a site made for pampers. "}
                       href={"http://sarahkarsh.com/personalsite2017"}
+                    />
+
+                     <PortfolioSection
+                      headingTitle={"Custom WordPress Site"}
+                      blurb={"This site was coded as a solo project to learn wordpress. I'm using custom fields, which makes editing content in the CMS simple and quick for the user. This site is also fully responsive (mobile-friendly!) and accessible."}
+                      src={"/images/everywhere.png"}
+                      alt={"A screenshot of everywhere. Logo in the middle of the page and misty trees behind it."}
+                      href={"http://sarahkarsh.com/everywhere/"}
+                    />
+                     <PortfolioSection
+                      headingTitle={"Movie Poster Design"}
+                      blurb={"I designed this movie poster for my HackerYou design course using AI. The goal of of the project was to learn some of the tools, use custom grids to layout the content."}
+                      src={"/images/princess-mono1.png"}
+                      alt={"A screenshot of everywhere. Logo in the middle of the page and misty trees behind it."}
+                      href={"http://sarahkarsh.com/images/princess-mono.png"}
                     />
 
                   </div>

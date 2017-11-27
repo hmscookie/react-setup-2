@@ -5,6 +5,9 @@ nav {
   position: fixed;
   width: 100%;
   z-index: 100;
+  top: 0 !important;
+  left: 0;
+  right: 0;
   ul {
     display: flex;
     justify-content: space-between;
@@ -29,6 +32,8 @@ nav {
     }
     a {
       color: white;
+      padding-top: 20px;
+      padding-bottom: 18px;
     }
   }
 }

@@ -1,6 +1,5 @@
 import React from 'react';
 import {render} from 'react-dom';
-import Zoom from 'react-reveal/Zoom'; 
 
 //Main portfolio
 class PortfolioSection extends React.Component {
@@ -28,7 +27,7 @@ class PortfolioSection extends React.Component {
           <div className="row"> {/*top blurb*/}
             <div className="spacing-2"></div>
             <h3 className="heading-3">{this.props.headingTitle}</h3>
-            <Zoom><p className="body">{this.props.blurb}</p></Zoom>
+            <p className="body">{this.props.blurb}</p>
             <div className="spacing-3"></div>
           </div>
 
